@@ -31,6 +31,12 @@ function Footer() {
               About us
             </Link>
             <Link
+              to="/profile"
+              className="hover:text-orange-300 transition-all duration-200"
+            >
+              Company Profile
+            </Link>
+            <Link
               to="/services"
               className="hover:text-orange-300 transition-all duration-200"
             >
@@ -41,6 +47,12 @@ function Footer() {
               className="hover:text-orange-300 transition-all duration-200"
             >
               Products
+            </Link>
+            <Link
+              to="/gallery"
+              className="hover:text-orange-300 transition-all duration-200"
+            >
+              Gallery
             </Link>
             <Link
               to="/contact"

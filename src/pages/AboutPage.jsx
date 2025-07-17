@@ -108,21 +108,34 @@ const AboutPage = () => {
     ))}
 
     {/* Conclusion */}
-    <div className="bg-white rounded-lg p-6 shadow-sm space-y-4">
-      <h2 className="text-xl font-semibold text-gray-800">Conclusion</h2>
-      <p className="text-sm text-gray-700">
-        Marjan Aman General Transport LLC is a transparent, professional, and customer-focused company with over 15 years of excellence in the UAE.
-      </p>
-      <p className="text-sm text-gray-700">
-        We build long-term relationships through reliability, personalized service, and commitment to our client's needs.
-      </p>
+<div className="bg-white rounded-lg p-6 shadow-md flex flex-col md:flex-row justify-between items-start gap-6">
+  {/* Text Section */}
+  <div className="flex-1 space-y-4">
+    <h2 className="text-2xl font-bold text-gray-800">Conclusion</h2>
+    <p className="text-sm text-gray-700 leading-relaxed">
+      Marjan Aman General Transport LLC is a transparent, professional, and customer-focused company with over 15 years of excellence in the UAE.
+    </p>
+    <p className="text-sm text-gray-700 leading-relaxed">
+      We build long-term relationships through reliability, personalized service, and commitment to our client's needs.
+    </p>
 
-      {/* Manager Info */}
-      <div className="bg-cyan-600 text-white rounded-lg p-4 mt-6">
-        <h3 className="text-lg font-semibold">Mr. Marjan Aman Ullah</h3>
-        <p className="text-sm text-cyan-100">General Manager</p>
-      </div>
+    {/* Manager Info Box */}
+    <div className="bg-cyan-600 text-white rounded-lg p-4">
+      <h3 className="text-lg font-semibold">Mr. Marjan Aman Ullah</h3>
+      <p className="text-sm text-cyan-100">General Manager</p>
     </div>
+  </div>
+
+  {/* Image Section */}
+  <div className="w-full md:w-[120px] flex-shrink-0">
+    <img
+      src="/images/md (1).jpg"
+      alt="Mr. Marjan Aman Ullah"
+      className="object-cover w-full h-auto shadow-sm"
+    />
+  </div>
+</div>
+
 
   </div>
 </div>

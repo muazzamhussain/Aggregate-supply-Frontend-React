@@ -96,6 +96,13 @@ function Navbar() {
             >
               Products
             </Link>
+                <Link
+                to="/gallery"
+                className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
+                onClick={closeMenu}
+              >
+                Gallery
+              </Link>
             <Link
               to="/contact"
               className="hover:text-orange-300 hover:scale-105 transition-all duration-200 font-medium"
@@ -167,6 +174,13 @@ function Navbar() {
                 onClick={closeMenu}
               >
                 Products
+              </Link>
+              <Link
+                to="/gallery"
+                className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
+                onClick={closeMenu}
+              >
+                Gallery
               </Link>
               <Link
                 to="/contact"
