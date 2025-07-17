@@ -17,29 +17,25 @@ const TransportVehiclesSection = () => {
   const vehicles = [
     {
       id: 1,
-      image:
-        "/images/Untitled design.png",
+      image: "/images/Untitled design.png",
       title: "Water Tanker Truck",
       description: "Heavy duty water transport for construction sites",
     },
     {
       id: 2,
-      image:
-        "/images/pngegg (1).png",
+      image: "/images/pngegg (1).png",
       title: "Wheel Loader",
       description: "Construction equipment for material handling",
     },
     {
       id: 3,
-      image:
-        "/images/pngegg.png",
+      image: "/images/pngegg.png",
       title: "Transport Fleet",
       description: "Complete vehicle solutions for projects",
     },
     {
       id: 4,
-      image:
-        "/images/pngegg (2).png",
+      image: "/images/pngegg (2).png",
       title: "Pickup Truck",
       description: "Light transport for deliveries",
     },
@@ -205,47 +201,6 @@ const TransportVehiclesSection = () => {
           </div>
         </div>
       </section>
-      <Clients />
-      <div className="bg-gradient-to-r from-blue-900 to-cyan-600 text-white p-10 mb-2 shadow-md">
-        <h3 className="text-4xl font-bold mb-4 text-center">Why Choose Us?</h3>
-        <ul className="space-y-2 text-lg">
-          {[
-            "15+ years of industry expertise",
-            "Complete fleet for all logistics needs",
-            "Professional & punctual service",
-            "Coverage across UAE & KSA",
-          ].map((item, idx) => (
-            <li key={idx} className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-white rounded-full"></span>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* CTA Banner */}
-      <div
-        className="relative w-full h-[350px] bg-center bg-cover flex items-center mb-3"
-        style={{
-          backgroundImage:
-            'url("/images/pexels-miguel-delima-1419393-16466053.jpg")', // Place your image here
-        }}
-      >
-        <div className="relative z-10 ml-6 md:ml-24 max-w-2xl text-white space-y-4">
-          <h1 className="text-3xl md:text-4xl font-semibold [text-shadow:2px_2px_20px_#000,2px_2px_20px_#000,2px_2px_20px_#000]">
-            Best Aggregate Suppliers in Dubai, UAE
-          </h1>
-          <p className="text-lg [text-shadow:2px_2px_20px_#000,2px_2px_20px_#000,2px_2px_20px_#000,1px_1px_14px_#000] ">
-            We deliver top-quality building materials on time. Get premium
-            aggregates at your site to keep your project running smoothly.
-          </p>
-          <button
-            className="bg-orange-600 hover:bg-orange-700 cursor-pointer text-white px-8 py-3 rounded-md text-base font-medium transition shadow-xl"
-            onClick={() => navigate("/contact")}
-          >
-            Buy Transport
-          </button>
-        </div>
-      </div>
     </>
   );
 };
