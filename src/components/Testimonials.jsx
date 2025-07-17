@@ -38,13 +38,13 @@ function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-md border hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-6 rounded-2xl shadow-md border border-orange-600 hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center space-x-4 mb-4">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-chrysler_blue"
+                  className="w-14 h-14 rounded-full object-cover border-1 border-blue-950"
                 />
                 <div>
                   <h4 className="text-lg font-semibold text-onyx">
@@ -62,7 +62,7 @@ function Testimonials() {
       </div>
       {/* CTA Banner */}
       <div
-        className="relative w-full h-[350px] bg-center bg-cover flex items-center mb-3"
+        className="relative w-full h-[350px] bg-center bg-cover flex items-center mb-3 "
         style={{
           backgroundImage:
             'url("/images/pexels-miguel-delima-1419393-16466053.jpg")', // Place your image here
@@ -76,7 +76,7 @@ function Testimonials() {
             We deliver top-quality building materials on time. Get premium
             aggregates at your site to keep your project running smoothly.
           </p>
-          <button className="bg-orange-600 hover:bg-orange-700 cursor-pointer text-white px-8 py-3 rounded-md text-base font-medium transition shadow-xl">
+          <button className="bg-orange-600 hover:bg-orange-700 cursor-pointer text-white px-8 py-3 rounded-md text-base font-medium transition drop-shadow-sm drop-shadow-black">
             <Link to="/contact">Buy Transport</Link>
           </button>
         </div>

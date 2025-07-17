@@ -4,34 +4,74 @@ function Clients() {
   // Sample client logos - you can replace these with your actual client logos
   const clientLogos = [
     {
-      src: "https://png.pngtree.com/template/20190626/ourmid/pngtree-property-and-construction-logo-design-image_220169.jpg",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfSREz_kLkIqlqLTD0SL0cWnd-Qz-e9yr7sCQ1rNxe-9SvNkQNfzR1RonymffE17RUjN0&usqp=CAU",
       alt: "Construction Company 1",
-      name: "BuildTech Solutions",
+      name: "FWO",
     },
     {
-      src: "https://png.pngtree.com/template/20191014/ourmid/pngtree-building-and-construction-logo-design-template-in-round-shape-image_317779.jpg",
+      src: "https://m.eyeofriyadh.com/news_images/2017/01/17e813d0e5ef3.png",
       alt: "Construction Company 2",
-      name: "Modern Builders Inc",
+      name: "Deva",
     },
     {
-      src: "https://png.pngtree.com/template/20191014/ourmid/pngtree-real-estate-business-logo-template-building-and-construction-logo-vector-design-image_317920.jpg",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLARwyOiUzKPxedFmv8nehf198jGyY-Sj-gw&s",
       alt: "Construction Company 3",
-      name: "Elite Construction",
+      name: "S.S Lootah",
     },
     {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFASK3Wvdff9ELAI65FjYxFZ6ZgpHJNuPUiQ&s",
+      src: "https://planisware.com/sites/default/files/styles/max_1300x1300/public/2022-10/adnoc-logo-vector.png?itok=NhLUx4ym",
       alt: "Construction Company 4",
-      name: "Urban Developers",
+      name: "Adnoc",
     },
     {
-      src: "https://logodix.com/logo/1815819.png",
+      src: "https://www.openspace.ai/wp-content/uploads/2023/08/Khansaheb-Logo-1-540x163.png",
       alt: "Construction Company 5",
-      name: "Premier Properties",
+      name: "Khan Saheb",
     },
     {
-      src: "https://img.freepik.com/free-vector/flat-design-vs-logo-design_23-2149482034.jpg?semt=ais_hybrid&w=740",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPvohQRcr1rkE0ufS8BIkl4f7G-oUvAyVvUHaP48FcGcurcNZruxjGLhDLzOeP9EItCRE&usqp=CAU",
       alt: "Construction Company 6",
-      name: "Skyline Builders",
+      name: "Ghantoot Group",
+    },
+    {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb6Gg1D34GqApXWN9jzjHggrz0qwrfEVHOQ&s",
+      alt: "Construction Company 6",
+      name: "Tenderd",
+    },
+    {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjXDpZ_jHTjZbYa06v53vZCrvO9QI8s8a5CA&s",
+      alt: "Construction Company 6",
+      name: "Oriental Pearls",
+    },
+    {
+      src: "https://media.licdn.com/dms/image/v2/C4E0BAQGWGkTniKz7IA/company-logo_200_200/company-logo_200_200/0/1631346421917?e=2147483647&v=beta&t=M0R96KOe_y2mj5lV-JxNIO4PsP6R8rjjjf5fosW0qYk",
+      alt: "Construction Company 6",
+      name: "Airolink",
+    },
+    {
+      src: "https://www.mediaoffice.ae/-/media/logos/dubai-municipality-logo.jpg?h=1397&w=3508&hash=44288F81B9D25A038D6D308681E730D1",
+      alt: "Construction Company 6",
+      name: "Dubai Municipality",
+    },
+    {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNZyIn10QVGrhESr6VwHXnaBkVTQMtPrB8w&s",
+      alt: "Construction Company 6",
+      name: "Damac",
+    },
+    {
+      src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/TECOM_Group.png",
+      alt: "Construction Company 6",
+      name: "Tecom Group",
+    },
+    {
+      src: "https://ckan.fcsc.gov.ae/uploads/group/2022-06-02-042630.949696-federal-electricity--water-authority-1200px-logo.png",
+      alt: "Construction Company 6",
+      name: "Federal Electricity & Water Authority",
+    },
+    {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2j_Zy_xwgShfIRsVeV-WYRXS-w9n-j84kOA&s",
+      alt: "Construction Company 6",
+      name: "Enoc",
     },
   ];
 

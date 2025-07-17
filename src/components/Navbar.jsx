@@ -79,6 +79,12 @@ function Navbar() {
               About us
             </Link>
             <Link
+              to="/profile"
+              className="hover:text-orange-300 hover:scale-105 transition-all duration-200 font-medium"
+            >
+              Profile
+            </Link>
+            <Link
               to="/services"
               className="hover:text-orange-300 hover:scale-105 transition-all duration-200 font-medium"
             >
@@ -140,6 +146,13 @@ function Navbar() {
                 onClick={closeMenu}
               >
                 About us
+              </Link>
+              <Link
+                to="/profile"
+                className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
+                onClick={closeMenu}
+              >
+                Profile
               </Link>
               <Link
                 to="/services"

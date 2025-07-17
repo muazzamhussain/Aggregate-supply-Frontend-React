@@ -10,6 +10,7 @@ import ProductsPage from './pages/ProductsPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import ProductDetailPage from './pages/ProductDetailsPage.jsx'
 import ServiceDetailPage from './pages/ServiceDetailsPage.jsx'
+import Profile from './pages/Profile.jsx'
 
 const router = createBrowserRouter([{
   path:"/",
@@ -21,7 +22,8 @@ const router = createBrowserRouter([{
       {path:"/products", element: <ProductsPage/>},
       {path:"/contact", element: <ContactPage/>},
       {path:"/product/:id", element: <ProductDetailPage/>},
-      {path:"/service/:id", element: <ServiceDetailPage/>}
+      {path:"/service/:id", element: <ServiceDetailPage/>},
+      {path:"/profile", element: <Profile/>}
   ]
 }])
 

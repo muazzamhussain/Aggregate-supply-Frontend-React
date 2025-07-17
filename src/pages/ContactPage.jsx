@@ -45,7 +45,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">Marjan Aman General Transport LLC</h3>
                   <div className="flex items-start space-x-3 mb-3">
                     <MapPin className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                    <p className="text-gray-600">Shop 7, Bldg I-10, Morocco Cluster, Intl City</p>
+                    <p className="text-gray-600">Morocco Cluster Building I 10, Shop # 07 international city Dubai P.O Box 296418</p>
                   </div>
                 </div>
 
@@ -174,7 +174,7 @@ export default function ContactPage() {
 
               <button
                 onClick={handleSubmit}
-                className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-4 px-6 rounded-lg transition duration-200 transform hover:scale-105"
+                className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-4 px-6 rounded-lg transition duration-200 transform hover:scale-105 cursor-pointer"
               >
                 GET A QUOTE
               </button>
