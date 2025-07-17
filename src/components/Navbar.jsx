@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <div className="w-full">
-      {/* Top header section */}
+      {/* Top header */}
       <div className="bg-white py-4 hidden md:block">
         <div className="flex flex-col lg:flex-row justify-between items-center mx-4 lg:mx-10 space-y-4 lg:space-y-0">
           <div className="flex-shrink-0">
@@ -62,10 +61,10 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Navigation section */}
+      {/* Navbar */}
       <nav className="bg-blue-950 text-white shadow-lg">
         <div className="flex justify-between items-center px-4 lg:px-10 py-3">
-          {/* Desktop menu */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex justify-center items-center space-x-8 w-full">
             <Link
               to="/"
@@ -97,19 +96,24 @@ function Navbar() {
             >
               Contact us
             </Link>
-            <button className="bg-blue-800 text-white font-bold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200">
-              <Link to="/contact">Get a Quote</Link>
-            </button>
+            <Link
+              to="/contact"
+              className="bg-blue-800 text-white font-bold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
+            >
+              Get a Quote
+            </Link>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Header */}
           <div className="lg:hidden ml-auto flex justify-between w-full items-center">
             <img
               src="https://marjanamantransport.com/images/logo.jpg"
-              alt=""
-              className="w-15"
+              alt="Logo"
+              className="w-12 h-12 object-cover"
             />
-            <h3>Marjan Aman General Transport</h3>
+            <h3 className="text-sm font-semibold">
+              Marjan Aman General Transport
+            </h3>
             <button
               onClick={toggleMenu}
               className="text-white hover:text-orange-300 transition-colors duration-200"
@@ -119,58 +123,59 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden bg-blue-900 border-t border-blue-800">
             <div className="flex flex-col space-y-2 px-4 py-4">
-              <a
-                href=""
+              <Link
+                to="/"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Home
-              </a>
-              <a
-                href="http://localhost:5173/about"
+              </Link>
+              <Link
+                to="/about"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 About us
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/services"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Services
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/products"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Products
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/gallery"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Gallery
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/contact"
                 className="hover:text-orange-300 transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Contact us
-              </a>
-              <button
-                className="bg-blue-800 text-white font-bold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200 mt-2 w-full"
-                onClick={() => setIsMenuOpen(false)}
+              </Link>
+              <Link
+                to="/contact"
+                className="bg-blue-800 text-white font-bold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200 mt-2 text-center"
+                onClick={closeMenu}
               >
                 Get a Quote
-              </button>
+              </Link>
             </div>
           </div>
         )}
