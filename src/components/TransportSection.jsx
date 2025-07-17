@@ -67,7 +67,7 @@ const TransportVehiclesSection = () => {
       {/* Carousel Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-between mb-10 flex-col md:flex-row gap-2">
             <h2 className="text-3xl font-bold text-gray-800">
               All Types of Transports
             </h2>
