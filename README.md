@@ -1,12 +1,56 @@
-# React + Vite
+# Aggregate Supply - Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern React-based frontend application for an **Aggregate Supply and Logistics Management** system. This platform is designed to manage and display product listings such as construction materials (e.g., sand, gravel, pebbles) and related transport services in the UAE/KSA region.
 
-Currently, two official plugins are available:
+## 🌐 Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Deployed on Netlify: https://marjanaman.netlify.app/
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Modern responsive UI using **TailwindCSS**
+- ✅ Dynamic product listing and detail view
+- ✅ Category-based product filtering
+- ✅ Clean routing using **React Router**
+- ✅ Service section showcasing logistics offerings
+- ✅ Modular and reusable components
+- ✅ Optimized for performance and SEO
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js
+- **Styling**: TailwindCSS
+- **Routing**: React Router DOM
+- **Icons**: React Icons / Lucide
+- **Animation (if any)**: Framer Motion (optional)
+- **Deployment**: Netlify / Render
+
+## 📂 Folder Structure
+
+Aggregate-supply-Frontend-React/
+│
+├── public/
+│ └── index.html
+│
+├── src/
+│ ├── assets/ # Images and icons
+│ ├── components/ # Reusable UI components (Navbar, Footer, ProductCard, etc.)
+│ ├── pages/ # Page components (Home, Products, Services, Contact)
+│ ├── data/ # Product and service data (static JSON/JS objects)
+│ ├── App.jsx # Main App component with routes
+│ ├── index.js # App entry point
+│ └── main.css # Tailwind directives
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+
+🧑‍💻 Contributing
+Feel free to fork this project, improve the UI/UX, add more features or optimize performance. PRs are welcome!
+
+📄 License
+This project is licensed under the MIT License.
+
+👤 Author
+Muazzam Hussain
