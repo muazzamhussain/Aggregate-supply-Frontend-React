@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
+import Loader from "./Loader"
 
 // Setup PDF worker
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.min?url';
@@ -31,7 +32,7 @@ const PdfViewer = () => {
       <Document
         file="/company-profile.pdf"
         onLoadSuccess={onLoadSuccess}
-        loading={<p className="text-center">Loading PDF...</p>}
+        loading={<Loader/>}
       >
         {Array.from(new Array(numPages), (_, i) => (
           <Page
